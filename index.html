@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Home Page</title>
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script src="scripts/courses.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - Web Frontend Development 1</h1>
+    <header>
+        <div class="top-header">
+            <div class="logo">Course Home Page</div>
+            <button id="menuButton">☰</button>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="main-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>My name is Ana Mosquera. I am currently studying Software Development at BYU-Pathway Worldwide. 
+                        I enjoy learning programming, improving my English, and developing new skills in technology. 
+                        My goal is to become a professional developer and create useful applications that help people.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div class="card-content">
+                    <img src="images/photo.jpg" alt="Student Photo">
+                </div>
+            </section>
+
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+
+            <div class="course-list">
+                <div class="course">WDD 130</div>
+                <div class="course">WDD 131</div>
+                <div class="course">WDD 231</div>
+            </div>
+
+            <p class="credits">The total credits for course listed above is 6</p>
+        </section>
+
+        <div class="social">
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            <a href="https://x.com" target="_blank"><img src="images/x.png" alt="X"></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Ana Mosquera • Popayan, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

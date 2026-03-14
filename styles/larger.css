@@ -1,0 +1,41 @@
+@media (min-width:768px){
+    #menuButton{
+        display:none;
+    }
+
+    nav{
+        display:block;
+    }
+
+    nav ul{
+        display:flex;
+    }
+
+    nav li{
+        border:none;
+    }
+
+    nav a{
+        border-right:1px solid #555;
+    }
+
+    .main-grid{
+        display:grid;
+        grid-template-columns:2fr 1fr;
+        gap:20px;
+    }
+
+    .course-list{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:10px;
+    }
+
+    .card{
+        margin:0;
+    }
+
+    .card h2{
+        margin:0;
+    }
+}

@@ -1,58 +1,64 @@
 [
-  {
-    "name": "Cafe Popayan",
-    "address": "Calle 5 #10-20",
-    "phone": "3001234567",
-    "website": "https://www.tripadvisor.co/Restaurants-g319824-zfg9900-Popayan_Cauca_Department.html",
-    "image": "cafe-popayan.jpg",
-    "membership": 2
-  },
-  {
-    "name": "Tech Solutions",
-    "address": "Carrera 8 #12-30",
-    "phone": "3009876543",
-    "website": "https://www.techs.com.co/",
-    "image": "tech-solutions.jpg",
-    "membership": 3
-  },
-  {
-    "name": "Market Plaza",
-    "address": "Centro",
-    "phone": "3012223344",
-    "website": "https://www.rappi.com.co/popayan/tiendas/tipo/market",
-    "image": "market-plaza.jpeg",
-    "membership": 1
-  },
-  {
-    "name": "Hotel Colonial",
-    "address": "Centro Histórico",
-    "phone": "3021112233",
-    "website": "https://www.tripadvisor.co/Hotel_Review-g319824-d2169355-Reviews-Hotel_Colonial-Popayan_Cauca_Department.html",
-    "image": "hotel-colonial.jpg",
-    "membership": 2
-  },
-  {
-    "name": "Gym Fitness",
-    "address": "Calle 15",
-    "phone": "3005556677",
-    "website": "https://gimnasiofitness.co/",
-    "image": "gym-fitness.jpg",
-    "membership": 1
-  },
-  {
-    "name": "Bakery Sweet",
-    "address": "El Recuerdo",
-    "phone": "3008889999",
-    "website": "https://www.rappi.com.co/popayan/restaurantes/category/postres",
-    "image": "bakery-sweet.jpg",
-    "membership": 2
-  },
-  {
-    "name": "Pharmacy Health",
-    "address": "Avenida Principal",
-    "phone": "3014445566",
-    "website": "https://www.farmatodo.com.co/drogueria/popayan.html",
-    "image": "pharmacy-health.webp",
-    "membership": 3
-  }
+    {
+        "name": "Cafe Popayan",
+        "address": "Calle 5 #10-20",
+        "phone": "3001234567",
+        "website": "https://www.tripadvisor.co/Restaurants-g319824-zfg9900-Popayan_Cauca_Department.html",
+        "image": "cafe-popayan.jpg",
+        "membership": 2
+    },
+
+    {
+        "name": "Tech Solutions",
+        "address": "Carrera 8 #12-30",
+        "phone": "3009876543",
+        "website": "https://www.techs.com.co/",
+        "image": "tech-solutions.jpg",
+        "membership": 3
+    },
+
+    {
+        "name": "Market Plaza",
+        "address": "Centro",
+        "phone": "3012223344",
+        "website": "https://www.rappi.com.co/popayan/tiendas/tipo/market",
+        "image": "market-plaza.jpeg",
+        "membership": 1
+    },
+
+    {
+        "name": "Hotel Colonial",
+        "address": "Centro Histórico",
+        "phone": "3021112233",
+        "website": "https://www.tripadvisor.co/Hotel_Review-g319824-d2169355-Reviews-Hotel_Colonial-Popayan_Cauca_Department.html",
+        "image": "hotel-colonial.jpg",
+        "membership": 2
+    },
+
+    {
+        "name": "Gym Fitness",
+        "address": "Calle 15",
+        "phone": "3005556677",
+        "website": "https://gimnasiofitness.co/",
+        "image": "gym-fitness.jpg",
+        "membership": 1
+    },
+
+    {
+        "name": "Bakery Sweet",
+        "address": "El Recuerdo",
+        "phone": "3008889999",
+        "website": "https://www.rappi.com.co/popayan/restaurantes/category/postres",
+        "image": "bakery-sweet.jpg",
+        "membership": 2
+    },
+    
+    {
+        "name": "Pharmacy Health",
+        "address": "Avenida Principal",
+        "phone": "3014445566",
+        "website": "https://www.farmatodo.com.co/drogueria/popayan.html",
+        "image": "pharmacy-health.webp",
+        "membership": 3
+    }
 ]

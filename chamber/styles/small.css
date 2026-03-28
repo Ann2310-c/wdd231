@@ -166,12 +166,6 @@ footer {
   border-radius: 5px;
 }
 
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .home-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr; 

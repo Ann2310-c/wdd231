@@ -5,4 +5,26 @@
     #navMenu {
         display: flex !important;
         flex-direction: row;}
+    /*.home-sections {
+    grid-template-columns: 1fr 1fr 1fr;
+  }*/
+  
+  .home-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .spotlight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
+/*
+.home-grid {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+#spotlights {
+  grid-template-columns: repeat(3, 1fr);
+}*/

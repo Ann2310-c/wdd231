@@ -1,13 +1,10 @@
 @media (min-width: 768px) {
-    #menuBtn {
-        display: none;}
+  #menuBtn {
+    display: none;}
 
-    #navMenu {
-        display: flex !important;
-        flex-direction: row;}
-    /*.home-sections {
-    grid-template-columns: 1fr 1fr 1fr;
-  }*/
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;}
   
   .home-top {
     display: grid;

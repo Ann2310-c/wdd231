@@ -17,14 +17,6 @@
   }
 
 }
-/*
-.home-grid {
-  grid-template-columns: 2fr 1fr 1fr;
-}
-
-#spotlights {
-  grid-template-columns: repeat(3, 1fr);
-}*/
 
 .join-container {
   display: grid;
@@ -49,7 +41,6 @@
   background: #eee;
   text-align: center;
 
-  /* ANIMACIÓN */
   animation: fadeIn 1s ease;
 }
 
@@ -80,7 +71,6 @@ dialog {
   align-items: flex-start;
 }
 
-/* FORM ocupa más espacio */
 form {
   flex: 2;
 }

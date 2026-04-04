@@ -1,167 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Apply to join the Popayán Chamber of Commerce and grow your business with networking, events, and local opportunities.">
-  <meta name="author" content="Ana Mosquera">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Join Popayán Chamber">
-<meta property="og:description" content="Apply to join the Popayán Chamber of Commerce and grow your business.">
-<meta property="og:image" content="https://ann2310-c.github.io/wdd231/chamber/images/logo.png">
-<meta property="og:url" content="https://ann2310-c.github.io/wdd231/chamber/join.html">
+    <meta charset="UTF-8">
+    <meta name="description" content="Apply to join the Popayán Chamber of Commerce and grow your business with networking, events, and local opportunities.">
+    <meta name="author" content="Ana Mosquera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Join Popayán Chamber">
+    <meta property="og:description" content="Apply to join the Popayán Chamber of Commerce and grow your business.">
+    <meta property="og:image" content="https://ann2310-c.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://ann2310-c.github.io/wdd231/chamber/join.html">
 
-  <title>Join | Popayán Chamber</title>
+    <title>Join | Popayán Chamber</title>
 
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/join.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
 
     <header>
-            <div class="header-container">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Popayán Chamber of Commerce logo">
-                    <span>Popayán Chamber of Commerce</span>
-                </div>
-                <button id="menuBtn">☰</button>
-                <nav id="navMenu">
-                    <a href="index.html">Home</a>
-                    <a href="directory.html">Directory</a>
-                    <a href="join.html" class="active">Join</a>
-                    <a href="#">Discover</a>
-                </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Popayán Chamber of Commerce logo">
+                <span>Popayán Chamber of Commerce</span>
             </div>
+            <button id="menuBtn">☰</button>
+            <nav id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <h1>Join the Chamber</h1>
+        <div class="join-container">
+            <!-- FORM -->
+            <form method="get" action="thankyou.html">
+                <label>
+                    First Name
+                    <input type="text" name="fname" required autocomplete="given-name" title="Enter your first name">
+                </label>
 
-    <h1>Join the Chamber</h1>
+                <label>
+                    Last Name
+                    <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
+                </label>
 
-    <div class="join-container">
+                <label>
+                    Organization Title
+                    <input type="text" name="title"
+                        pattern="[A-Za-z\s-]{7,}"
+                        title="At least 7 letters, spaces or hyphens"
+                        autocomplete="organization-title">
+                </label>
 
-    <!-- FORM -->
-    <form method="get" action="thankyou.html">
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="example@email.com" autocomplete="email" title="Enter your email address">
+                </label>
 
-        <label>
-        First Name
-        <input type="text" name="fname" required autocomplete="given-name" title="Enter your first name">
-        </label>
+                <label>
+                    Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your phone number">
+                </label>
 
-        <label>
-        Last Name
-        <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
-        </label>
+                <label>
+                    Business Name
+                    <input type="text" name="business" required autocomplete="organization" title="Enter your business name">
+                </label>
 
-        <label>
-        Organization Title
-        <input type="text" name="title"
-            pattern="[A-Za-z\s-]{7,}"
-            title="At least 7 letters, spaces or hyphens"
-            autocomplete="organization-title">
-        </label>
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+                        <option value="">Select</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
 
-        <label>
-        Email
-        <input type="email" name="email" required placeholder="example@email.com" autocomplete="email" title="Enter your email address">
-        </label>
+                <label>
+                    Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
 
-        <label>
-        Phone
-        <input type="tel" name="phone" required autocomplete="tel" title="Enter your phone number">
-        </label>
+                <!-- TIMESTAMP -->
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Apply Now">
+            </form>
 
-        <label>
-        Business Name
-        <input type="text" name="business" required autocomplete="organization" title="Enter your business name">
-        </label>
+            <!-- CARDS -->
+            <div class="membership-cards">
+                <div class="card">
+                    <img src="images/group.png" alt="NP membership icon">
+                    <h3>NP Membership</h3>
+                    <a href="#" data-modal="npModal">View Benefits</a>
+                </div>
 
-        <label>
-        Membership Level
-        <select name="membership" required>
-            <option value="">Select</option>
-            <option value="np">NP Membership</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-        </select>
-        </label>
+                <div class="card">
+                    <img src="images/bronze.png" alt="Bronze membership icon">
+                    <h3>Bronze</h3>
+                    <a href="#" data-modal="bronzeModal">View Benefits</a>
+                </div>
 
-        <label>
-        Description
-        <textarea name="description" title="Describe your business"></textarea>
-        </label>
+                <div class="card">
+                    <img src="images/silver.png" alt="Silver membership icon">
+                    <h3>Silver</h3>
+                    <a href="#" data-modal="silverModal">View Benefits</a>
+                </div>
 
-        <!-- TIMESTAMP -->
-        <input type="hidden" name="timestamp" id="timestamp">
-
-        <input type="submit" value="Apply Now">
-
-    </form>
-
-    <!-- CARDS -->
-    <div class="membership-cards">
-
-        <div class="card">
-        <img src="images/group.png" alt="NP membership icon">
-        <h3>NP Membership</h3>
-        <a href="#" data-modal="npModal">View Benefits</a>
+                <div class="card">
+                    <img src="images/gold.png" alt="Gold membership icon">
+                    <h3>Gold</h3>
+                    <a href="#" data-modal="goldModal">View Benefits</a>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-        <img src="images/bronze.png" alt="Bronze membership icon">
-        <h3>Bronze</h3>
-        <a href="#" data-modal="bronzeModal">View Benefits</a>
-        </div>
+        <!-- MODALS -->
+        <dialog id="npModal">
+            <h2>NP Membership</h2>
+            <p><p>No fee. Access to basic networking events and community resources.</p></p>
+            <button class="close">Close</button>
+        </dialog>
 
-        <div class="card">
-        <img src="images/silver.png" alt="Silver membership icon">
-        <h3>Silver</h3>
-        <a href="#" data-modal="silverModal">View Benefits</a>
-        </div>
+        <dialog id="bronzeModal">
+            <h2>Bronze</h2>
+            <p><p>Access to events, basic advertising, and business directory listing.</p></p>
+            <button class="close">Close</button>
+        </dialog>
 
-        <div class="card">
-        <img src="images/gold.png" alt="Gold membership icon">
-        <h3>Gold</h3>
-        <a href="#" data-modal="goldModal">View Benefits</a>
-        </div>
+        <dialog id="silverModal">
+            <h2>Silver</h2>
+            <p><p>Includes Bronze benefits plus featured listings and event discounts.</p></p>
+            <button class="close">Close</button>
+        </dialog>
 
-    </div>
-
-    </div>
-
-    <!-- MODALS -->
-    <dialog id="npModal">
-    <h2>NP Membership</h2>
-    <p><p>No fee. Access to basic networking events and community resources.</p></p>
-    <button class="close">Close</button>
-    </dialog>
-
-    <dialog id="bronzeModal">
-    <h2>Bronze</h2>
-    <p><p>Access to events, basic advertising, and business directory listing.</p></p>
-    <button class="close">Close</button>
-    </dialog>
-
-    <dialog id="silverModal">
-    <h2>Silver</h2>
-    <p><p>Includes Bronze benefits plus featured listings and event discounts.</p></p>
-    <button class="close">Close</button>
-    </dialog>
-
-    <dialog id="goldModal">
-    <h2>Gold</h2>
-    <p><p>All benefits including homepage spotlight, premium advertising, and priority events.</p></p>
-    <button class="close">Close</button>
-    </dialog>
-
+        <dialog id="goldModal">
+            <h2>Gold</h2>
+            <p><p>All benefits including homepage spotlight, premium advertising, and priority events.</p></p>
+            <button class="close">Close</button>
+        </dialog>
     </main>
 
     <footer>
@@ -187,6 +177,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

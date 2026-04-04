@@ -129,16 +129,6 @@ footer {
   margin: 0 10px;
 }
 
-@media (min-width: 768px) {
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
-}
-
-/**/
 /* HERO */
 .hero {
   width: 100%;

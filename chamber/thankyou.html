@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Popayán Chamber</title>
+</head>
+
+<body>
+
+<header>...</header>
+
+<main>
+  <h1>Thank You!</h1>
+  <p id="results"></p>
+</main>
+
+<footer>...</footer>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("results").innerHTML = `
+Name: ${params.get("fname")} ${params.get("lname")} <br>
+Email: ${params.get("email")} <br>
+Phone: ${params.get("phone")} <br>
+Business: ${params.get("business")} <br>
+Date: ${params.get("timestamp")}
+`;
+</script>
+
+</body>
+</html>

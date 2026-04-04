@@ -7,6 +7,12 @@ const sunrise = document.querySelector("#sunrise");
 const sunset = document.querySelector("#sunset");
 const icon = document.querySelector("#weather-icon");
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=2.44&lon=-76.61&units=imperial&appid=808b564578570840c8985b8355b31ed5";
+const menuBtn = document.querySelector("#menuBtn");
+const navMenu = document.querySelector("#navMenu");
+
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
 
 async function getWeather() {
   const response = await fetch(url);

@@ -5,7 +5,7 @@
     align-items: center;
     text-align: left;
   }
-  
+
   #menuBtn {
     display: none;}
 
@@ -24,7 +24,7 @@
   }
 
   .join-container {
-    display: grid;              /* 👈 FALTABA ESTO */
+    display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     align-items: start;

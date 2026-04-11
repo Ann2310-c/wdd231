@@ -2,24 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore local businesses in Popayán with our chamber directory. Find services, shops, and organizations in one place.">
+    <meta name="description" content="Discover places in Popayán including attractions, culture, and local highlights.">
     <meta name="author" content="Ana Mosquera">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Popayán Chamber Business Directory">
-    <meta property="og:description" content="Discover local businesses, services, and organizations in Popayán through our official chamber directory.">
-    <meta property="og:image" content="https://ann2310-c.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="https://ann2310-c.github.io/wdd231/chamber/directory.html">
-    <title>Directory | Popayán Chamber</title>
-    <link rel="icon" href="images/favicon.ico">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Discover | Popayán Chamber</title>
+
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/script.js" defer></script>
+
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 
 <body>
@@ -40,12 +34,11 @@
     </header>
 
     <main>
-        <h1>Explore Local Businesses</h1>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="members" class="grid"></div>
+        <h1>Discover Popayán</h1>
+
+        <p id="visit-message"></p>
+
+        <div id="places"></div>
     </main>
 
     <footer>
@@ -71,5 +64,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

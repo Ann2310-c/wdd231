@@ -36,3 +36,47 @@
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+#places {
+  display: grid;
+  gap: 1rem;
+}
+
+/* MEDIUM */
+@media (min-width: 641px) {
+  #places {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+/* LARGE */
+@media (min-width: 1025px) {
+  #places {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card8";
+  }
+}
+
+/* ASIGNAR */
+#places section:nth-child(1) { grid-area: card1; }
+#places section:nth-child(2) { grid-area: card2; }
+#places section:nth-child(3) { grid-area: card3; }
+#places section:nth-child(4) { grid-area: card4; }
+#places section:nth-child(5) { grid-area: card5; }
+#places section:nth-child(6) { grid-area: card6; }
+#places section:nth-child(7) { grid-area: card7; }
+#places section:nth-child(8) { grid-area: card8; }
+
+@media (min-width: 768px) {
+  #places img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+

@@ -144,16 +144,6 @@ footer {
   max-width: none;
 }
 
-.cta {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: black;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
 
 .home-top {
   display: grid;
@@ -269,9 +259,7 @@ dialog {
   margin-bottom: 10px;
 }
 
-form {
-  flex: 2;
-}
+
 
 .card h3 {
   text-align: center;
@@ -307,13 +295,8 @@ form {
 }
 
 /* FORM */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
-/* LABEL */
+
 form label {
   display: flex;
   flex-direction: column;
@@ -321,7 +304,6 @@ form label {
   gap: 0.3rem;
 }
 
-/* INPUTS */
 form input,
 form select,
 form textarea {
@@ -331,7 +313,6 @@ form textarea {
   font-size: 1rem;
 }
 
-/* TEXTAREA */
 form textarea {
   min-height: 80px;
   resize: vertical;
@@ -349,15 +330,9 @@ form input[type="submit"] {
   margin-top: 1rem;
 }
 
-form input[type="submit"]:hover {
-  background-color: #555;
-}
 
-form {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
+
+
 
 .cta {
   background: #3f4143;
@@ -375,4 +350,14 @@ form {
 #places button {
   margin-top: 10px;
   padding: 5px 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
 }

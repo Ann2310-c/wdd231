@@ -9,7 +9,7 @@ import { places } from "../data/discover.mjs";
 
 const container = document.querySelector("#places");
 
-// CREAR CARDS
+//CARDS
 places.forEach((place, index) => {
     const card = document.createElement("section");
     card.innerHTML = `
@@ -44,7 +44,6 @@ if (!lastVisit) {
 
 localStorage.setItem("lastVisit", now);
 
-// FOOTER
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.querySelectorAll("#places button").forEach(btn => {

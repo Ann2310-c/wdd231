@@ -40,7 +40,7 @@
 @media (min-width: 1025px) {
   #places {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 🔥 FALTA ESTO */
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "card1 card2 card3"
       "card4 card5 card6"

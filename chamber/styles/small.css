@@ -330,16 +330,18 @@ form input[type="submit"] {
   margin-top: 1rem;
 }
 
-
-
-
-
 .cta {
   background: #3f4143;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
+}
+
+#places {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 #places section {

@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+
+  #menuBtn {
+    display: none;
+  }
+
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero img {
+    height: 400px;
+  }
+
+}

@@ -363,3 +363,14 @@ form {
   padding: 1.5rem;
   border-radius: 8px;
 }
+
+dialog {
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+}
+
+dialog[open] {
+  margin: auto;
+}

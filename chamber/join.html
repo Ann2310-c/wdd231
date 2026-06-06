@@ -36,7 +36,7 @@
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html" class="active">Join</a>
-                <a href="discover.html">Discover</a>
+                <a href="#">Discover</a>
             </nav>
         </div>
     </header>
@@ -81,7 +81,10 @@
 
                 <label>
                     Membership Level
-                    <select name="membership" required>
+                    <select
+                        name="membership"
+                        required
+                        title="Select a membership level">
                         <option value="">Select</option>
                         <option value="np">NP Membership</option>
                         <option value="bronze">Bronze</option>
@@ -100,29 +103,29 @@
                 <input type="submit" value="Apply Now">
             </form>
 
-            <!-- CARDS -->
+           <!-- CARDS -->
             <div class="membership-cards">
                 <h2>Membership Levels</h2>
                 <div class="card">
-                    <img src="images/group.png" alt="NP membership icon">
+                    <img src="images/group.png" alt="NP membership icon" loading="lazy">
                     <h3>NP Membership</h3>
                     <a href="#" data-modal="npModal">View Benefits</a>
                 </div>
 
                 <div class="card">
-                    <img src="images/bronze.png" alt="Bronze membership icon">
+                    <img src="images/bronze.png" alt="Bronze membership icon" loading="lazy">
                     <h3>Bronze</h3>
                     <a href="#" data-modal="bronzeModal">View Benefits</a>
                 </div>
 
                 <div class="card">
-                    <img src="images/silver.png" alt="Silver membership icon">
+                    <img src="images/silver.png" alt="Silver membership icon" loading="lazy">
                     <h3>Silver</h3>
                     <a href="#" data-modal="silverModal">View Benefits</a>
                 </div>
 
                 <div class="card">
-                    <img src="images/gold.png" alt="Gold membership icon">
+                    <img src="images/gold.png" alt="Gold membership icon" loading="lazy">
                     <h3>Gold</h3>
                     <a href="#" data-modal="goldModal">View Benefits</a>
                 </div>

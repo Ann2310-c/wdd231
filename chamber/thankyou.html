@@ -4,31 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You | Popayán Chamber</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Popayán Chamber of Commerce logo">
+        <span>Popayán Chamber of Commerce</span>
+      </div>
+      <button id="menuBtn">☰</button>
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="#">Discover</a>
+      </nav>
+    </div>
+  </header>
 
-<header>...</header>
+  <main>
+    <h1>Thank You!</h1>
+    <p id="results"></p>
+  </main>
 
-<main>
-  <h1>Thank You!</h1>
-  <p id="results"></p>
-</main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>Popayán Chamber of Commerce</strong><br>
+        Popayán, Colombia<br>
+        info@popayanchamber.com<br>
+        (057) 543-1234
+      </div>
 
-<footer>...</footer>
+      <div class="footer-center">
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Visit our YouTube channel"></a>
+        <a href="https://x.com/" target="_blank"><img src="images/x-icon.png" alt="Visit our X profile"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
+      </div>
 
-<script>
-const params = new URLSearchParams(window.location.search);
+      <div class="footer-right">
+        <p>WDD231 Class Project</p>
+        <p>Ana Mosquera</p>
+        <p>© <span id="year"></span> Popayán Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
 
-document.getElementById("results").innerHTML = `
-<h2>Application Received</h2>
-<p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
-<p><strong>Email:</strong> ${params.get("email")}</p>
-<p><strong>Phone:</strong> ${params.get("phone")}</p>
-<p><strong>Business:</strong> ${params.get("business")}</p>
-<p><strong>Date:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>
-`;
-</script>
-
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("results").innerHTML = `
+    <h2>Application Received</h2>
+    <p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
+    <p><strong>Email:</strong> ${params.get("email")}</p>
+    <p><strong>Phone:</strong> ${params.get("phone")}</p>
+    <p><strong>Business:</strong> ${params.get("business")}</p>
+    <p><strong>Date:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>
+    `;
+  </script>
 </body>
 </html>

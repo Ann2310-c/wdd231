@@ -5,24 +5,36 @@ menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("open");
 });
 
-import { places } from "../data/discover.mjs";
+async function loadPlaces() {
+    const response = await fetch("data/places.json");
+    const places = await response.json();
+    const container = document.querySelector("#places");
 
-const container = document.querySelector("#places");
+    places.forEach(place => {
+        const card = document.createElement("section");
 
-//CARDS
-places.forEach((place, index) => {
-    const card = document.createElement("section");
-    card.innerHTML = `
-        <h2>${place.name}</h2>
-        <figure>
-        <img src="${place.image}" alt="${place.name}" loading="lazy">
-        </figure>
-        <address>${place.address}</address>
-        <p>${place.description}</p>
-        <button>Learn More</button>
-    `;
-    container.appendChild(card);
-});
+        card.innerHTML = `
+            <h2>${place.name}</h2>
+            <figure>
+                <img src="${place.image}" alt="${place.name}" loading="lazy">
+            </figure>
+            <address>${place.address}</address>
+            <p>${place.description}</p>
+            <button>Learn More</button>
+        `;
+
+        container.appendChild(card);
+    });
+
+    document.querySelectorAll("#places button").forEach(btn => {
+        btn.addEventListener("click", () => {
+            alert("More information coming soon!");
+        });
+    });
+}
+
+loadPlaces();
+
 
 // LOCAL STORAGE
 const message = document.querySelector("#visit-message");
@@ -46,8 +58,3 @@ localStorage.setItem("lastVisit", now);
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.querySelectorAll("#places button").forEach(btn => {
-    btn.addEventListener("click", () => {
-        alert("More information coming soon!");
-    });
-});

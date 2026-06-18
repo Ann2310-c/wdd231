@@ -17,6 +17,21 @@
 </head>
 
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo-flower.png" alt="Logo Flower Garden Colombia">
+        <span>Flower Garden Colombia</span>
+      </div>
+      <button id="menuBtn">☰</button>
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="flowers.html">Flowers</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <h1>Créditos</h1>
     <p>Imágenes: Unsplash, Pexels (optimizadas en formato WebP).</p>
@@ -24,11 +39,34 @@
     <p>Fuentes: Google Fonts (Roboto).</p>
     <p>API: OpenWeather para datos de clima.</p>
   </main>
+
   <footer>
-    <p>© <span id="year"></span> Flower Garden Colombia</p>
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>Flower Garden Colombia</strong><br>
+        <p>Fresh flowers for every occasion.</p>
+        Popayán, Colombia<br>
+        info@popayanflower.com<br>
+        (057) 543-1234
+      </div>
+
+      <div class="footer-center">
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Visit our YouTube channel"></a>
+        <a href="https://x.com/" target="_blank"><img src="images/x-icon.png" alt="Visit our X profile"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
+      </div>
+
+      <a href="attributions.html">Attributions</a>
+      <a href="YOUR_VIDEO_LINK">Project Video</a>
+
+      <div class="footer-right">
+        <p>WDD231 Final Project</p>
+        <p>Ana Mosquera</p>
+        <p>© <span id="year"></span> Flower Garden Colombia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
   </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+
 </body>
 </html>

@@ -30,3 +30,21 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 768px){
+  .collection-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+  .features-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+  .stats{
+    grid-template-columns:repeat(3,1fr);
+  }
+  .reviews-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+  .featured-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}

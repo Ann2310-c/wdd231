@@ -36,6 +36,7 @@ async function loadFeaturedFlowers() {
       `;
       container.appendChild(card);
     });
+    
   } catch (error) {
     console.error("Error cargando featured flowers:", error);
   }

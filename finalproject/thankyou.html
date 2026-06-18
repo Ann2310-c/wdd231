@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="header-container">
       <div class="logo">
@@ -31,18 +32,17 @@
       </nav>
     </div>
   </header>
+
   <main>
     <h1>¡Gracias por tu pedido!</h1>
     <p id="results"></p>
-    <a href="index.html" class="cta">
-      Return Home
-    </a>
-    
   </main>
+
   <footer>
     <div class="footer-container">
       <div class="footer-left">
         <strong>Flower Garden Colombia</strong><br>
+        <p>Fresh flowers for every occasion.</p>
         Popayán, Colombia<br>
         info@popayanflower.com<br>
         (057) 543-1234
@@ -54,13 +54,18 @@
         <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
       </div>
 
+      <a href="attributions.html">Attributions</a>
+      <a href="YOUR_VIDEO_LINK">Project Video</a>
+
       <div class="footer-right">
         <p>WDD231 Final Project</p>
         <p>Ana Mosquera</p>
         <p>© <span id="year"></span> Flower Garden Colombia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
       </div>
     </div>
   </footer>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     document.getElementById("results").innerHTML = `
@@ -70,9 +75,9 @@
       <p><strong>Flor:</strong> ${params.get("flower")}</p>
       <p><strong>Cantidad:</strong> ${params.get("quantity")}</p>
       <p><strong>Mensaje:</strong> ${params.get("message")}</p>
-      <p><strong>Fecha:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>
-    `;
+      <p><strong>Fecha:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>`;
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>

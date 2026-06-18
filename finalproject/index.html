@@ -1,122 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Flower Garden Colombia - Floristería con flores frescas y envíos en el mismo día.">
-  <meta name="author" content="Ana Mosquera">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Flower Garden Colombia">
-  <meta property="og:description" content="Descubre flores frescas, colecciones destacadas y pedidos personalizados.">
-  <meta property="og:image" content="images/logo-flower.png">
-  <meta property="og:url" content="index.html">
-  <title>Inicio | Flower Garden Colombia</title>
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/home.mjs" defer></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Flower Garden Colombia - Fresh flowers for every occasion. Discover bouquets, gifts, and floral arrangements.">
+    <meta name="author" content="Ana Mosquera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Flower Garden Colombia">
+    <meta property="og:description" content="Fresh flowers and beautiful bouquets for every occasion.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://yourgithuburl/finalproject/index.html">
+
+    <title>Flower Garden Colombia | Home</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/home.mjs"></script>
 </head>
+
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <img src="images/logo-flower.png" alt="Logo Flower Garden Colombia">
-        <span>Flower Garden Colombia</span>
-      </div>
-      <button id="menuBtn">☰</button>
-      <nav id="navMenu">
-        <a href="index.html" class="active">Home</a>
-        <a href="flowers.html">Flowers</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <img src="images/garden-flowers.webp" alt="Jardín de flores">
-      <a href="flowers.html" class="cta">Shop Flowers</a>
-    </section>
-
-    <!-- ABOUT -->
-    <section>
-      <h2>About Us</h2>
-      <p>Somos una floristería colombiana dedicada a ofrecer flores frescas, arreglos personalizados y envíos el mismo día.</p>
-    </section>
-
-    <!-- FEATURED COLLECTIONS -->
-    <section>
-      <h2>Featured Collections</h2>
-      <ul>
-        <li>Romantic Roses</li>
-        <li>Wedding Flowers</li>
-        <li>Birthday Bouquets</li>
-      </ul>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section>
-      <h2>Why Choose Us</h2>
-      <ul>
-        <li>Fresh flowers</li>
-        <li>Same-day delivery</li>
-        <li>Affordable prices</li>
-        <li>Custom bouquets</li>
-      </ul>
-    </section>
-
-    <!-- FEATURED FLOWERS -->
-    <section>
-      <h2>Featured Flowers</h2>
-      <div id="featured-flowers"></div>
-    </section>
-
-    <section class="reviews">
-        <h2>Customer Reviews</h2>
-
-        <div class="review-card">
-        ⭐⭐⭐⭐⭐
-        <p>Beautiful flowers and fast delivery.</p>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-flower.png" alt="Flower Garden Colombia Logo">
+                <span>Flower Garden Colombia</span>
+            </div>
+            <button id="menuBtn">☰</button>
+            <nav id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="flowers.html">Flowers</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="review-card">
-        ⭐⭐⭐⭐⭐
-        <p>The bouquet was perfect for my mother.</p>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/garden-flowers.webp"
+                alt="Beautiful flower bouquet"
+                loading="eager"
+                width="1200"
+                height="600"
+            >
+            <div class="hero-content">
+                <h1>Fresh Flowers for Every Occasion</h1>
+                <p>Beautiful bouquets and floral arrangements delivered
+                    throughout Colombia.
+                </p>
+                <a href="flowers.html" class="cta">
+                    Shop Flowers
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>About Flower Garden Colombia</h2>
+            <p>
+                Flower Garden Colombia offers premium floral arrangements
+                handcrafted with fresh flowers. Whether you are celebrating
+                a birthday, wedding, anniversary, or special event, we help
+                make every moment memorable.
+            </p>
+        </section>
+
+        <!-- COLLECTIONS -->
+        <section class="collections">
+
+            <h2>Popular Collections</h2>
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <h3>🌹 Romantic</h3>
+                    <p>Perfect flowers for anniversaries and special moments.</p>
+                </article>
+
+                <article class="collection-card">
+                    <h3>💐 Birthday</h3>
+                    <p>Colorful bouquets to celebrate loved ones.</p>
+                </article>
+
+                <article class="collection-card">
+                    <h3>👰 Wedding</h3>
+                    <p>Elegant floral arrangements for unforgettable weddings.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-us">
+
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🚚 Fast Delivery</h3>
+                    <p>Same-day delivery in many locations.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>🌷 Fresh Flowers</h3>
+                    <p>Carefully selected flowers from trusted growers.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>💝 Custom Bouquets</h3>
+                    <p>Personalized arrangements for any occasion.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>⭐ Excellent Service</h3>
+                    <p>Dedicated customer support and satisfaction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats">
+
+            <div class="stat">
+                <h3>15+</h3>
+                <p>Flower Designs</p>
+            </div>
+
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Fresh Flowers</p>
+            </div>
+        </section>
+
+        <!-- FEATURED FLOWERS -->
+        <section>
+            <h2>Featured Flowers</h2>
+            <div id="featured-flowers" class="featured-grid"></div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <article>
+                    <p>"The bouquet was absolutely beautiful and arrived
+                        right on time!"</p>
+                    <strong>— Maria G.</strong>
+                </article>
+
+                <article>
+                    <p>"Amazing quality flowers and excellent service."</p>
+                    <strong>— Carlos R.</strong>
+                </article>
+
+                <article>
+                    <p>"I highly recommend Flower Garden Colombia."</p>
+                    <strong>— Andrea P.</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <strong>Flower Garden Colombia</strong><br>
+                <p>Fresh flowers for every occasion.</p>
+                Popayán, Colombia<br>
+                info@popayanflower.com<br>
+                (057) 543-1234
+            </div>
+
+            <div class="footer-center">
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Visit our YouTube channel"></a>
+                <a href="https://x.com/" target="_blank"><img src="images/x-icon.png" alt="Visit our X profile"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
+            </div>
+
+            <a href="attributions.html">Attributions</a>
+            <a href="YOUR_VIDEO_LINK">Project Video</a>
+
+            <div class="footer-right">
+                <p>WDD231 Final Project</p>
+                <p>Ana Mosquera</p>
+                <p>© <span id="year"></span> Flower Garden Colombia</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
         </div>
-
-        <div class="review-card">
-        ⭐⭐⭐⭐⭐
-        <p>Excellent service and quality.</p>
-        </div>
-
-    </section>
-
-
-
-
-  </main>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <strong>Flower Garden Colombia</strong><br>
-        Popayán, Colombia<br>
-        info@popayanflower.com<br>
-        (057) 543-1234
-      </div>
-
-      <div class="footer-center">
-        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Visit our YouTube channel"></a>
-        <a href="https://x.com/" target="_blank"><img src="images/x-icon.png" alt="Visit our X profile"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
-      </div>
-
-      <div class="footer-right">
-        <p>WDD231 Final Project</p>
-        <p>Ana Mosquera</p>
-        <p>© <span id="year"></span> Flower Garden Colombia</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>

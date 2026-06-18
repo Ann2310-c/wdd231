@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Red Rose",
+    "price": 18,
+    "category": "Romantic",
+    "description": "Fresh red roses, símbolo de amor y pasión.",
+    "color": "Rojo",
+    "availability": "Disponible",
+    "image": "rose.webp"
+  },
+  {
+    "name": "White Lily",
+    "price": 22,
+    "category": "Wedding",
+    "description": "Elegant white lilies, perfectas para bodas.",
+    "color": "Blanco",
+    "availability": "Disponible",
+    "image": "lily.webp"
+  },
+  {
+    "name": "Sunflower",
+    "price": 15,
+    "category": "Birthday",
+    "description": "Bright sunflowers que transmiten alegría.",
+    "color": "Amarillo",
+    "availability": "Disponible",
+    "image": "sunflower.webp"
+  },
+  {
+    "name": "Orchid",
+    "price": 30,
+    "category": "Exotic",
+    "description": "Delicate orchids, elegantes y exóticas.",
+    "color": "Morado",
+    "availability": "Disponible",
+    "image": "orchid.webp"
+  },
+  {
+    "name": "Tulip",
+    "price": 20,
+    "category": "Spring",
+    "description": "Colorful tulips, símbolo de la primavera.",
+    "color": "Rosa",
+    "availability": "Disponible",
+    "image": "tulip.webp"
+  },
+  {
+    "name": "Carnation",
+    "price": 12,
+    "category": "Classic",
+    "description": "Traditional carnations, flores clásicas y duraderas.",
+    "color": "Rojo",
+    "availability": "Disponible",
+    "image": "carnation.webp"
+  },
+  {
+    "name": "Daisy",
+    "price": 10,
+    "category": "Casual",
+    "description": "Simple daisies, frescas y alegres.",
+    "color": "Blanco",
+    "availability": "Disponible",
+    "image": "daisy.webp"
+  },
+  {
+    "name": "Hydrangea",
+    "price": 25,
+    "category": "Garden",
+    "description": "Beautiful hydrangeas, ideales para jardines.",
+    "color": "Azul",
+    "availability": "Disponible",
+    "image": "hydrangea.webp"
+  },
+  {
+    "name": "Peony",
+    "price": 28,
+    "category": "Luxury",
+    "description": "Soft peonies, flores lujosas y delicadas.",
+    "color": "Rosa",
+    "availability": "Disponible",
+    "image": "peony.webp"
+  },
+  {
+    "name": "Lavender",
+    "price": 14,
+    "category": "Aromatic",
+    "description": "Fragrant lavender, relajante y aromática.",
+    "color": "Morado",
+    "availability": "Disponible",
+    "image": "lavender.webp"
+  },
+  {
+    "name": "Chrysanthemum",
+    "price": 16,
+    "category": "Autumn",
+    "description": "Seasonal chrysanthemums, perfectas para otoño.",
+    "color": "Naranja",
+    "availability": "Disponible",
+    "image": "chrysanthemum.webp"
+  },
+  {
+    "name": "Gardenia",
+    "price": 24,
+    "category": "Elegant",
+    "description": "Pure gardenias, símbolo de elegancia.",
+    "color": "Blanco",
+    "availability": "Disponible",
+    "image": "gardenia.webp"
+  },
+  {
+    "name": "Anemone",
+    "price": 19,
+    "category": "Unique",
+    "description": "Rare anemones, flores únicas y llamativas.",
+    "color": "Azul",
+    "availability": "Disponible",
+    "image": "anemone.webp"
+  },
+  {
+    "name": "Magnolia",
+    "price": 26,
+    "category": "Exotic",
+    "description": "Large magnolias, flores majestuosas.",
+    "color": "Blanco",
+    "availability": "Disponible",
+    "image": "magnolia.webp"
+  },
+  {
+    "name": "Camellia",
+    "price": 21,
+    "category": "Romantic",
+    "description": "Beautiful camellias, símbolo de amor y gratitud.",
+    "color": "Rosa",
+    "availability": "Disponible",
+    "image": "camellia.webp"
+  }
+]

@@ -1,91 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Recipe Organizer | Home</title>
-  <meta name="description" content="Organize your recipes and discover new ideas for cooking.">
+  <meta name="description" content="Flower Garden Colombia - Floristería con flores frescas y envíos en el mismo día.">
   <meta name="author" content="Ana Mosquera">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Recipe Organizer">
-  <meta property="og:description" content="Save and organize your favorite recipes easily.">
-  <meta property="og:image" content="images/hero.webp">
-  <meta property="og:url" content="https://tuusuario.github.io/finalproject/index.html">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Flower Garden Colombia">
+  <meta property="og:description" content="Descubre flores frescas, colecciones destacadas y pedidos personalizados.">
+  <meta property="og:image" content="images/logo-flower.png">
+  <meta property="og:url" content="index.html">
+  <title>Inicio | Flower Garden Colombia</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-
-  <script src="scripts/main.js" defer></script>
+  <script src="scripts/home.mjs" defer></script>
 </head>
-
 <body>
-
-<header>
-  <div class="header-container">
-    <h1>🍲 Recipe Organizer</h1>
-
-    <button id="menuBtn">☰</button>
-
-    <nav id="navMenu">
-      <a href="index.html">Home</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="submit.html">Submit</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="images/hero.webp" alt="Cooking image" loading="lazy">
-    <div class="hero-text">
-      <h2>Organize Your Recipes Easily</h2>
-      <p>Find, save and enjoy your favorite meals</p>
-      <a href="recipes.html" class="cta">Explore Recipes</a>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo-flower.png" alt="Logo Flower Garden Colombia">
+        <span>Flower Garden Colombia</span>
+      </div>
+      <button id="menuBtn">☰</button>
+      <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="flowers.html">Flowers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/garden-flowers.webp" alt="Jardín de flores">
+      <a href="flowers.html" class="cta">Shop Flowers</a>
+    </section>
 
-  <!-- INTRO -->
-  <section class="intro">
-    <h2>Why use this site?</h2>
-    <p>
-      This website helps you store recipes, search by ingredients,
-      and organize your cooking ideas in one place.
-    </p>
-  </section>
+    <!-- ABOUT -->
+    <section>
+      <h2>About Us</h2>
+      <p>Somos una floristería colombiana dedicada a ofrecer flores frescas, arreglos personalizados y envíos el mismo día.</p>
+    </section>
 
-  <!-- FEATURES -->
-  <section class="features">
-    <div>
-      <h3>🔍 Search Recipes</h3>
-      <p>Find recipes by category or ingredients.</p>
+    <!-- FEATURED COLLECTIONS -->
+    <section>
+      <h2>Featured Collections</h2>
+      <ul>
+        <li>Romantic Roses</li>
+        <li>Wedding Flowers</li>
+        <li>Birthday Bouquets</li>
+      </ul>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section>
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Fresh flowers</li>
+        <li>Same-day delivery</li>
+        <li>Affordable prices</li>
+        <li>Custom bouquets</li>
+      </ul>
+    </section>
+
+    <!-- FEATURED FLOWERS -->
+    <section>
+      <h2>Featured Flowers</h2>
+      <div id="featured-flowers"></div>
+    </section>
+
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>Beautiful flowers and fast delivery.</p>
+        </div>
+
+        <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>The bouquet was perfect for my mother.</p>
+        </div>
+
+        <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>Excellent service and quality.</p>
+        </div>
+
+    </section>
+
+
+
+
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>Flower Garden Colombia</strong><br>
+        Popayán, Colombia<br>
+        info@popayanflower.com<br>
+        (057) 543-1234
+      </div>
+
+      <div class="footer-center">
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Visit our YouTube channel"></a>
+        <a href="https://x.com/" target="_blank"><img src="images/x-icon.png" alt="Visit our X profile"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Visit our LinkedIn page"></a>
+      </div>
+
+      <div class="footer-right">
+        <p>WDD231 Final Project</p>
+        <p>Ana Mosquera</p>
+        <p>© <span id="year"></span> Flower Garden Colombia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
     </div>
-
-    <div>
-      <h3>💾 Save Ideas</h3>
-      <p>Keep your favorite recipes organized.</p>
-    </div>
-
-    <div>
-      <h3>📱 Easy to Use</h3>
-      <p>Works on mobile and desktop.</p>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2026 Recipe Organizer | Ana Mosquera</p>
-  <a href="attributions.html">Attributions</a>
-</footer>
-
+  </footer>
 </body>
 </html>

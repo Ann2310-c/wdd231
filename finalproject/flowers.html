@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Confirmación de tu pedido en Flower Garden Colombia.">
+  <meta name="description" content="Explora todas nuestras flores disponibles en Flower Garden Colombia.">
   <meta name="author" content="Ana Mosquera">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Gracias | Flower Garden Colombia">
-  <meta property="og:description" content="Tu pedido ha sido recibido exitosamente.">
+  <meta property="og:title" content="Flores | Flower Garden Colombia">
+  <meta property="og:description" content="Descubre nuestra colección de flores frescas y personalizadas.">
   <meta property="og:image" content="images/logo-flower.png">
-  <meta property="og:url" content="thankyou.html">
-  <title>Gracias | Flower Garden Colombia</title>
-  <link rel="icon" href="favicon.ico">
+  <meta property="og:url" content="flowers.html">
+  <title>Flores | Flower Garden Colombia</title>
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/flowers.mjs"></script>
 </head>
 
 <body>
@@ -25,19 +26,33 @@
       </div>
       <button id="menuBtn">☰</button>
       <nav id="navMenu">
-        <a href="index.html" class="active">Home</a>
-        <a href="flowers.html">Flowers</a>
+        <a href="index.html">Home</a>
+        <a href="flowers.html" class="active">Flowers</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
   <main>
-    <h1>¡Gracias por tu pedido!</h1>
-    <p id="results"></p>
-    <a href="index.html" class="cta">
-      Return Home
-    </a>
-    
+    <h1>Nuestras Flores</h1>
+    <div class="filters">
+      <button data-category="all">All</button>
+      <button data-category="Romantic">Romantic</button>
+      <button data-category="Wedding">Wedding</button>
+      <button data-category="Birthday">Birthday</button>
+      <button data-category="Sympathy">Sympathy</button>
+      <button data-category="Seasonal">Seasonal</button>
+    </div>
+    <div id="flowers"></div>
+
+    <!-- MODAL -->
+    <dialog id="flowerModal">
+      <h2 id="modalName"></h2>
+      <p id="modalDescription"></p>
+      <p><strong>Precio:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Color:</strong> <span id="modalColor"></span></p>
+      <p><strong>Disponibilidad:</strong> <span id="modalAvailability"></span></p>
+      <button id="closeModal">Cerrar</button>
+    </dialog>
   </main>
   <footer>
     <div class="footer-container">
@@ -58,21 +73,9 @@
         <p>WDD231 Final Project</p>
         <p>Ana Mosquera</p>
         <p>© <span id="year"></span> Flower Garden Colombia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
       </div>
     </div>
   </footer>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById("results").innerHTML = `
-      <p><strong>Nombre:</strong> ${params.get("fname")}</p>
-      <p><strong>Correo:</strong> ${params.get("email")}</p>
-      <p><strong>Teléfono:</strong> ${params.get("phone")}</p>
-      <p><strong>Flor:</strong> ${params.get("flower")}</p>
-      <p><strong>Cantidad:</strong> ${params.get("quantity")}</p>
-      <p><strong>Mensaje:</strong> ${params.get("message")}</p>
-      <p><strong>Fecha:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>
-    `;
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Confirmación de tu pedido en Flower Garden Colombia.">
+  <meta name="description" content="Contáctanos para pedidos y consultas en Flower Garden Colombia.">
   <meta name="author" content="Ana Mosquera">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Gracias | Flower Garden Colombia">
-  <meta property="og:description" content="Tu pedido ha sido recibido exitosamente.">
+  <meta property="og:title" content="Contacto | Flower Garden Colombia">
+  <meta property="og:description" content="Haz tu pedido de flores frescas y arreglos personalizados.">
   <meta property="og:image" content="images/logo-flower.png">
-  <meta property="og:url" content="thankyou.html">
-  <title>Gracias | Flower Garden Colombia</title>
-  <link rel="icon" href="favicon.ico">
+  <meta property="og:url" content="contact.html">
+  <title>Contacto | Flower Garden Colombia</title>
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/contact.mjs"></script>
 </head>
 
 <body>
@@ -25,19 +26,24 @@
       </div>
       <button id="menuBtn">☰</button>
       <nav id="navMenu">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="flowers.html">Flowers</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
   <main>
-    <h1>¡Gracias por tu pedido!</h1>
-    <p id="results"></p>
-    <a href="index.html" class="cta">
-      Return Home
-    </a>
-    
+    <h1>Haz tu pedido</h1>
+    <form method="get" action="thankyou.html">
+      <label>Nombre <input type="text" name="fname" required></label>
+      <label>Correo <input type="email" name="email" required></label>
+      <label>Teléfono <input type="tel" name="phone" required></label>
+      <label>Flor <input type="text" name="flower" required></label>
+      <label>Cantidad <input type="number" name="quantity" required></label>
+      <label>Mensaje <textarea name="message"></textarea></label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Enviar Pedido">
+    </form>
   </main>
   <footer>
     <div class="footer-container">
@@ -58,21 +64,9 @@
         <p>WDD231 Final Project</p>
         <p>Ana Mosquera</p>
         <p>© <span id="year"></span> Flower Garden Colombia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
       </div>
     </div>
   </footer>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById("results").innerHTML = `
-      <p><strong>Nombre:</strong> ${params.get("fname")}</p>
-      <p><strong>Correo:</strong> ${params.get("email")}</p>
-      <p><strong>Teléfono:</strong> ${params.get("phone")}</p>
-      <p><strong>Flor:</strong> ${params.get("flower")}</p>
-      <p><strong>Cantidad:</strong> ${params.get("quantity")}</p>
-      <p><strong>Mensaje:</strong> ${params.get("message")}</p>
-      <p><strong>Fecha:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>
-    `;
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

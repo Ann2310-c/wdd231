@@ -68,7 +68,7 @@ function displayFlowers(flowers) {
   });
 }
 
-// Cargar JSON
+// Cargar JSON=
 async function loadFlowers() {
   try {
   const response = await fetch("data/flowers.json");

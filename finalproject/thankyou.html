@@ -69,13 +69,13 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     document.getElementById("results").innerHTML = `
-      <p><strong>Nombre:</strong> ${params.get("fname")}</p>
-      <p><strong>Correo:</strong> ${params.get("email")}</p>
-      <p><strong>Teléfono:</strong> ${params.get("phone")}</p>
-      <p><strong>Flor:</strong> ${params.get("flower")}</p>
-      <p><strong>Cantidad:</strong> ${params.get("quantity")}</p>
-      <p><strong>Mensaje:</strong> ${params.get("message")}</p>
-      <p><strong>Fecha:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>`;
+      <p><strong>Name:</strong> ${params.get("fname")}</p>
+      <p><strong>Email:</strong> ${params.get("email")}</p>
+      <p><strong>Phone number:</strong> ${params.get("phone")}</p>
+      <p><strong>Flower:</strong> ${params.get("flower")}</p>
+      <p><strong>Quantity:</strong> ${params.get("quantity")}</p>
+      <p><strong>Message:</strong> ${params.get("message")}</p>
+      <p><strong>Date:</strong> ${new Date(params.get("timestamp")).toLocaleString()}</p>`;
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
